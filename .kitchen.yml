@@ -12,14 +12,17 @@ provisioner:
 
 transport:
   ssh_key: ~/.ssh/chef-aws-adfs.pem
+  username: ec2-user
 
 platforms:
   - name: Amazon-Ubuntu-14.04
     driver:
       image_id: ami-ba3e14d9
-  # - name: Amazon-Linux-2016.09.0
-  #   driver:
-  #     image_id: ami-55d4e436
+    transport:
+      username: ubuntu
+  - name: Amazon-Linux-2016.09.0
+    driver:
+      image_id: ami-55d4e436
   - name: RedHat-7.2
     driver:
       image_id: ami-e0c19f83

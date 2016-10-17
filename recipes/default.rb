@@ -9,6 +9,10 @@ execute 'pip' do
 	not_if 'which pip'
 end
 
+execute 'upgrade' do
+	command 'pip install --upgrade pip'
+end
+
 execute 'aws-adfs' do
   command 'pip install aws-adfs'
 	not_if 'which aws-adfs'
