@@ -1,0 +1,7 @@
+DEPENDENCIES
+  aws-adfs
+    path: .
+    metadata: true
+
+GRAPH
+  aws-adfs (0.1.0)
