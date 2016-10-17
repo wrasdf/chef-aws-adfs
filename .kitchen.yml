@@ -3,7 +3,6 @@ driver:
   name: ec2
   aws_ssh_key_id: chef-aws-adfs
   region: ap-southeast-2
-  require_chef_omnibus: true
   associate_public_ip: true
   instance_type: t2.nano
 
